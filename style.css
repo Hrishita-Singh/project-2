@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family:"roboto",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin: 80px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(0, 0, 58);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 6px 6px 6px rgb(6, 6, 43);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "dancing script",cursive;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.1s ease-in;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.1s ease-in;
+}
+
+.hero_sec{
+    background-image: url(images/mm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+
+.hero_sec .container{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-bottom: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.hero_sec h1{
+    font-size: 60px;
+}
+
+.hero_sec h3{
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.hero_sec p{
+    font-size: 16px;
+    font-weight: 200;
+    gap: 18px;
+}
+
+.music_sec{
+    text-align: center;
+    padding-top: 10px;
+    background-color:rgb(0, 0, 58);
+    height: 80vh;
+    color: white;
+}
+
+.music_sec h2{
+    margin-top: 15px;
+    word-spacing: 8px;
+}
+
+.music_sec h3{
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 450;
+}
+
+.music_sec h4{
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: 200;
+    padding-left: 140px;
+    padding-right: 140px;
+    word-spacing: 1.6px;
+}
+
+.music_sec button{
+    margin-top: 15px;
+    background-color: rgb(210, 11, 11);
+    font-size: 14px;
+    padding: 9px;
+    border: none;
+    color: aliceblue;
+}
+
+.music_sec p{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 60;
+}
+
+.about_music {
+    margin-top: 340px;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    gap: 40px;
+    
+}
+
+.about_music p{
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 350;
+}
+
+.about_music button{
+    background-color:rgb(5, 5, 108);
+    color: aliceblue;
+    padding: 9px;
+    border: none;
+}
+
+.about_music img{
+    width: 1000px;
+    height: auto;
+}
+
+.video_sec{
+  position: relative;
+  width: 100%;
+  height: 98vh; 
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.video_sec .text{
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  font-size: 15px;
+}
+
+.video_sec p{
+   margin-top: 30px;
+   gap: 10px;
+   margin-left: 150px;
+   margin-right: 150px;
+}
+
+.video_sec video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;      
+  height: 92vh;     
+  object-fit: cover;
+  z-index: 0;
+  margin-top: 40px;
+}
+
+.gift_sec{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    gap: 50px;
+    scroll-margin: 80px;
+}
+
+.gift_sec img{
+    width: 600px; 
+}
+
+.gift_sec .content{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.gift_sec p{
+    gap: 12px;
+}
+
+.gift_sec button{
+    background-color:rgb(5, 5, 108);
+    color: aliceblue;
+    padding: 9px;
+    border: none;
+}
+
+.upper_sec{
+    background-color: rgb(0, 0, 58);
+    padding: 20px;
+}
+
+.upper_sec .container{
+    display: flex;
+    color:aliceblue;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.upper_sec h4{
+    font-size: 18px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid aliceblue;
+}
+
+.upper_sec li{
+    font-size: 12px;
+}
+
+.lower_sec{
+    background-color: rgb(8, 8, 99);
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+}
